@@ -1,0 +1,113 @@
+body {
+    font-family: "Sora", sans-serif;
+}
+
+.outlined{
+    font-weight: 800;
+    color: var(--color-white);
+    /* -webkit-text-stroke: 2px black; */
+    text-shadow: var(--outline-width) 0 var(--color-black),
+        calc(var(--outline-width) * -1) 0 var(--color-black),
+        0 var(--outline-width) var(--color-black),
+        0 calc(var(--outline-width) * -1) var(--color-black),
+        var(--outline-width) var(--outline-width) var(--color-black),
+        calc(var(--outline-width) * -1) calc(var(--outline-width) * -1)
+        var(--color-black),
+        var(--outline-width) calc(var(--outline-width) * -1) var(--color-black),
+        calc(var(--outline-width) * -1) var(--outline-width) var(--color-black);
+}
+
+.header{
+    padding: var(--spacing-16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_brand{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-12);
+}
+
+.header_title{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-black);
+}
+
+.header_nav,
+.header_cta{
+    display: none;
+}
+
+/*Pantallas mas grandes que un movil*/
+@media (min-width: 1024px){
+    .header_nav,
+    .header_cta{
+        display: block;
+    }
+
+    .header_toogle{
+        display: none;
+    }
+
+    .header_nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-32);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .header_cta{
+        display: flex;
+        gap: 10.5px;
+        font-size: 20px;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        padding: var(--spacing-16) var(--spacing-20);
+        border-radius: 4px;
+    }
+}
+
+/*Hero*/
+
+.hero{
+    padding: var(--spacing-40) var(--spacing-16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-40);
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-32);
+}
+
+.hero_title{
+    font-weight: 400;
+    font-size: clamp(28px, 5vw, 16px);
+    line-height: 32px;
+    letter-spacing: -2%;
+    color: var(--color-black);
+}
+
+.hero_title strong{
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -2%;
+}
+
+.hero_description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
