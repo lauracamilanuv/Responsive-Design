@@ -17,6 +17,12 @@ body {
         calc(var(--outline-width) * -1) var(--outline-width) var(--color-black);
 }
 
+.section-title{
+    font-weight: 409;
+    font-size: 28px;
+    text-align: center;
+}
+
 .header{
     padding: var(--spacing-16);
     display: flex;
@@ -92,7 +98,7 @@ body {
 
 .hero_title{
     font-weight: 400;
-    font-size: clamp(28px, 5vw, 16px);
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
     line-height: 32px;
     letter-spacing: -2%;
     color: var(--color-black);
@@ -100,7 +106,7 @@ body {
 
 .hero_title strong{
     font-weight: 800;
-    font-size: 28px;
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
     line-height: 32px;
     letter-spacing: -2%;
 }
@@ -110,4 +116,55 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 2%;
+    color: #71717A;
 }
+
+.hero_image{
+    width: 100%;
+    height: auto;
+    max-height: 342px;
+}
+
+.hero_social {
+  display: flex;
+  gap: var(--spacing-24);
+  margin-top: var(--spacing-4);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-black);
+  border-radius: 4px;
+  background: var(  --color-white);
+  transition: all 0.2s ease;
+  color: var(--color-black);
+}
+
+.social-link:hover {
+  background: var(--color-black);
+  color: var(  --color-white);
+  transform: translateY(-2px);
+}
+
+.social-link:hover img {
+  filter: invert(1);
+}
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px){
+    .hero{
+        flex-direction: row-reverse;
+    }
+    .hero_content{
+        max-width: 50%;
+    }
+}
+
