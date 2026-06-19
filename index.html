@@ -32,7 +32,7 @@
     </header>
     <main>
         <section class="hero">
-            <img  class="hero_image" src="assets/hero.svg" alt="Girl working on a laptop"/>
+            <img  class="hero_image" src="assets/hero.svg" alt="Girl working on a laptop" fetchpriority="high"/>
             <div class="hero_content">
                 <h1 class="hero_title">Hello I'am <strong>Flora Sheen.</strong><br /><strong>Frontend</strong> <span class="outlined">Developer</span><br /> Based in <strong>India.</strong></h1>
                 <p class="hero_description">I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
@@ -195,6 +195,318 @@
           </div>
         </section>
 
+        <section class="about-me" id="about-me">
+          <div class="section-container about__container">
+            <div class="about__image-wrapper">
+              <img
+                src="assets/about-me.svg"
+                alt="About Me"
+                class="about__image"
+              />
+            </div>
+            <div class="about__content">
+              <h2 class="section-title about__title">
+                About <strong>Me</strong>
+              </h2>
+              <div class="about__text">
+                <p>
+                  I'm a passionate, self-proclaimed designer who specializes in
+                  full stack development (React.js & Node.js). I am very
+                  enthusiastic about bringing the technical and visual aspects of
+                  digital products to life. User experience, pixel perfect design,
+                  and writing clear, readable, highly performant code matters to
+                  me.
+                </p>
+                <p>
+                  I began my journey as a web developer in 2015, and since then,
+                  I've continued to grow and evolve as a developer, taking on new
+                  challenges and learning the latest technologies along the way.
+                  Now, in my early thirties, 7 years after starting my web
+                  development journey, I'm building cutting-edge web applications
+                  using modern technologies such as Next.js, TypeScript, Nestjs,
+                  Tailwindcss, Supabase and much more.
+                </p>
+                <p>
+                  When I'm not in full-on developer mode, you can find me hovering
+                  around on twitter or on indie hacker, witnessing the journey of
+                  early startups or enjoying some free time. You can follow me on
+                  Twitter where I share tech-related bites and build in public, or
+                  you can follow me on GitHub.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects" id="projects">
+          <div class="section-container">
+            <h2 class="section-title">
+              My <strong>Projects</strong>
+            </h2>
+            <div class="project-list">
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <picture>
+                  <source srcset="assets/Project-1.webp" type="image/webp" />
+                  <img
+                    src="https://res.cloudinary.com/ds7nxjrwz/image/upload/v1764182537/project3_h1cdha.jpg"
+                    alt="Crypto Screener Application"
+                    class="project-card__image"
+                    srcset="
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_400/project3_h1cdha.jpg 400w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_600/project3_h1cdha.jpg 600w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_800/project3_h1cdha.jpg 800w
+                    "
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="project-card__content">
+                <span class="project-card__number">01</span>
+                <h3 class="project-card__title">Crypto Screener Application</h3>
+                <p class="project-card__description">
+                  I'm Flora Sheen Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to
+                  specimen book.
+                </p>
+                <a
+                  href="#"
+                  class="project-card__link"
+                  aria-label="Read more about Crypto Screener Application"
+                >
+                  <img src="assets/ReadMore.svg" alt="Read More" />
+                </a>
+              </div>
+            </article>
+            <article class="project-card project-card--reverse">
+              <div class="project-card__image-wrapper">
+                <picture>
+                  <source srcset="assets/Project-2.webp" type="image/webp" />
+                  <img
+                    src="https://res.cloudinary.com/ds7nxjrwz/image/upload/v1764182537/project2_vnxvj7.jpg"
+                    alt="Euphoria - Ecommerce (Apparels) Website Template"
+                    class="project-card__image"
+                    srcset="
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_400/project2_vnxvj7.jpg 400w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_600/project2_vnxvj7.jpg 600w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_800/project2_vnxvj7.jpg 800w
+                    "
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="project-card__content">
+                <span class="project-card__number">02</span>
+                <h3 class="project-card__title">
+                  Euphoria - Ecommerce (Apparels) Website Template
+                </h3>
+                <p class="project-card__description">
+                  I'm Flora Sheen Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to
+                  specimen book. when an unknown printer took a galley of type
+                  and scrambled it to specimen book.
+                </p>
+                <a
+                  href="#"
+                  class="project-card__link"
+                  aria-label="Read more about Euphoria Website Template"
+                >
+                  <img src="assets/ReadMore.svg" alt="Read More" />
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__image-wrapper">
+                <picture>
+                  <source srcset="assets/Project-3.webp" type="image/webp" />
+                  <img
+                    src="https://res.cloudinary.com/ds7nxjrwz/image/upload/w_1000/project1_ondout.jpg"
+                    alt="Blog Website Template"
+                    class="project-card__image"
+                    srcset="
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_400/project1_ondout.jpg 400w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_600/project1_ondout.jpg 600w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/w_800/project1_ondout.jpg 800w
+                    "
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+              <div class="project-card__content">
+                <span class="project-card__number">03</span>
+                <h3 class="project-card__title">Blog Website Template</h3>
+                <p class="project-card__description">
+                  I'm Flora Sheen Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and scrambled it to
+                  specimen book.
+                </p>
+                <a
+                  href="#"
+                  class="project-card__link"
+                  aria-label="Read more about Blog Website Template"
+                >
+                  <img src="assets/ReadMore.svg" alt="Read More" />
+                </a>
+              </div>
+            </article>
+          </div>
+          </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+          <div class="section-container">
+            <h2 class="section-title">
+              My <strong>Testimonial</strong>
+            </h2>
+
+            <div class="testimonials__list">
+              <div class="testimonial-card">
+                <div class="testimonial-card__header">
+                  <picture>
+                  <!-- WebP (primer intento del navegador) -->
+                  <source
+                    type="image/webp"
+                    srcset="
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_100/Illustration_Portfolio_Template_6_cwxhru.jpg 100w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_200/Illustration_Portfolio_Template_6_cwxhru.jpg 200w
+                    "
+                  />
+
+                  <!-- JPG fallback -->
+                  <source
+                    type="image/jpeg"
+                    srcset="
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_100/Illustration_Portfolio_Template_6_cwxhru.jpg 100w,
+                      https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_200/Illustration_Portfolio_Template_6_cwxhru.jpg 200w
+                    "
+                  />
+
+                  <!-- Fallback final -->
+                  <img
+                    src="https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_200/Illustration_Portfolio_Template_6_cwxhru.jpg"
+                    alt="Evren Shah"
+                    class="testimonial-card__avatar"
+                    loading="lazy"
+                  />
+                </picture>
+                <img
+                  src="assets/quotes.svg"
+                  alt="Quote"
+                  class="testimonial-card__quote-icon"
+                />
+                </div>
+                <p class="testimonial-card__text">
+                  I recently had to jump on 10+ different calls across eight
+                  different countries to find the right owner.
+                </p>
+                <div class="testimonial-card__footer">
+                  <h3 class="testimonial-card__name">Evren Shah</h3>
+                  <p class="testimonial-card__role">Designer</p>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-card__header">
+                  <picture>
+                    <!-- WebP -->
+                    <source
+                      type="image/webp"
+                      srcset="
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_400/Illustration_Portfolio_Template_vhteti.png   400w,
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_800/Illustration_Portfolio_Template_vhteti.png   800w,
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_1200/Illustration_Portfolio_Template_vhteti.png 1200w
+                      "
+                    />
+
+                    <!-- JPG fallback -->
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_400/v1764271528/Illustration_Portfolio_Template_vhteti.png   400w,
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_800/v1764271528/Illustration_Portfolio_Template_vhteti.png   800w,
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_1200/v1764271528/Illustration_Portfolio_Template_vhteti.png 1200w
+                      "
+                    />
+
+                    <!-- Fallback final -->
+                    <img
+                      src="https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_800/v1764271528/Illustration_Portfolio_Template_vhteti.png"
+                      alt="Flora Sheen"
+                      class="testimonial-card__avatar"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <img
+                    src="assets/quotes.svg"
+                    alt="Quote"
+                    class="testimonial-card__quote-icon"
+                  />
+                </div>
+                <p class="testimonial-card__text">
+                  I recently had to jump on 10+ different calls across eight
+                  different countries to find the right owner.
+                </p>
+                <div class="testimonial-card__footer">
+                  <h3 class="testimonial-card__name">Flora Sheen</h3>
+                  <p class="testimonial-card__role">Designer</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-card__header">
+                  <picture>
+                    <!-- WebP (primer intento del navegador) -->
+                    <source
+                      type="image/webp"
+                      srcset="
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_100/Illustration_Portfolio_Template_6_cwxhru.jpg 100w,
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_webp,w_200/Illustration_Portfolio_Template_6_cwxhru.jpg 200w
+                      "
+                    />
+
+                    <!-- JPG fallback -->
+                    <source
+                      type="image/jpeg"
+                      srcset="
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_100/Illustration_Portfolio_Template_6_cwxhru.jpg 100w,
+                        https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_200/Illustration_Portfolio_Template_6_cwxhru.jpg 200w
+                      "
+                    />
+
+                    <!-- Fallback final -->
+                    <img
+                      src="https://res.cloudinary.com/ds7nxjrwz/image/upload/f_jpg,w_200/Illustration_Portfolio_Template_6_cwxhru.jpg"
+                      alt="Evren Shah"
+                      class="testimonial-card__avatar"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <img
+                    src="assets/quotes.svg"
+                    alt="Quote"
+                    class="testimonial-card__quote-icon"
+                  />
+                </div>
+                <p class="testimonial-card__text">
+                  I recently had to jump on 10+ different calls across eight
+                  different countries to find the right owner.
+                </p>
+                <div class="testimonial-card__footer">
+                  <h3 class="testimonial-card__name">Evren Shah</h3>
+                  <p class="testimonial-card__role">Designer</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
     </main>
 </body>
