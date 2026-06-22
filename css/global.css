@@ -40,6 +40,7 @@ section{
 }
 
 .header{
+    position: relative;
     padding: var(--spacing-16);
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,25 @@ section{
 .header_nav,
 .header_cta{
     display: none;
+}
+
+.header_nav--active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    padding: var(--spacing-16);
+    border-top: 1px solid var(--zinc-200);
+}
+
+.header_nav--active ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /*Pantallas mas grandes que un movil*/
