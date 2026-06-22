@@ -64,6 +64,21 @@ section{
     display: none;
 }
 
+.header_toogle__close {
+    display: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.header_toogle[aria-expanded="true"] .header_toogle__icon {
+    display: none;
+}
+
+.header_toogle[aria-expanded="true"] .header_toogle__close {
+    display: block;
+}
+
 .header_nav--active {
     display: block;
     position: absolute;
