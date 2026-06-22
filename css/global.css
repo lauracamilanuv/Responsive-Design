@@ -18,9 +18,7 @@ body {
 }
 
 section{
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: var(--spacing-40) var(--spacing-16);
+  width: 100%;
 }
 
 .section-title{
@@ -85,6 +83,10 @@ section{
     font-weight: 600;
 }
 
+
+.header_nav ul li {
+  cursor: pointer;
+}
 /*Pantallas mas grandes que un movil*/
 @media (min-width: 1024px){
     .header_nav,
@@ -119,6 +121,8 @@ section{
 
 /*Hero*/
 .hero{
+    max-width: var(--max-width);
+    margin: 0 auto;
     padding: var(--spacing-40) var(--spacing-16);
     display: flex;
     flex-direction: column;
@@ -468,7 +472,22 @@ section{
 }
 
 .project-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 44px;
+  min-height: 44px;
+  padding: var(--spacing-12);
   margin-top: var(--spacing-8);
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.project-card__link:hover,
+.project-card__link:focus-visible {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 @container project-list (min-width: 700px) {
@@ -507,6 +526,7 @@ section{
   border-radius: 20px;
   background: var(--color-white);
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .testimonial-card:hover {
@@ -718,11 +738,11 @@ section{
 }
 
 @media (min-width: 768px) {
-  .contact .container {
+  .contact .section-container {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    gap: var(--spacing-60); /* More space on desktop */
+    gap: var(--spacing-40);
   }
 
   .contact__form-wrapper {
@@ -748,4 +768,43 @@ section{
     flex-direction: row;
     align-items: center;
   }
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  background-color: var(--color-black);
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.logo_footer{
+  display: flex;
+  align-items: center;
+  gap: 13.86px;
+}
+.copyright .logo_footer .header_title,
+.copy p{
+  color: var(--color-white);
+}  
+
+.copyright .logo_footer .header_title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.copy{
+  text-align: right;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
 }
